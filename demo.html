@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/demo.css">
+  <link rel="shortcut icon" href="/Assets/imgs/Big_favicon.png" type="image/x-icon">
+  <title>Latto Café</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a id="logo" href="#home">
+        <img id="imglogo" src="/Assets/imgs/Logo.png" alt="">
+      </a>
+      <a href="#home" class="navItem active">Home</a>
+      <a href="#menu" class="navItem">Menu</a>
+      <a href="#contact" class="navItem">Contact</a>
+      <a href="#about" class="navItem">About</a>
+      <a href="javascript:void(0);" class="navItem iconBar" onclick="myfunction()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+
+
+
+
+    <div id="wrapper">
+      <div id="main_content">
+        <h1 id="hwelcome"> Welcome to Latto Café </h1>
+        <div class="parallax"></div>
+        <h2>Our History</h2>
+        <p id="pwelcome"> Latto Café was founded in the heart of Rome in 1950 by Giovanni Latto, a passionate coffee
+          enthusiast with a dream
+          of creating a cozy haven for coffee lovers. Giovanni's vision was to blend traditional Italian coffee culture
+          with a
+          warm, inviting atmosphere where friends and family could gather. Over the decades, Latto Café became renowned
+          for
+          its artisanal espresso, freshly baked pastries, and charming ambiance. Today, Latto Café continues to uphold
+          Giovanni's legacy, serving as a beloved spot for locals and tourists alike to enjoy a taste of authentic
+          Italian
+          hospitality. </p>
+        <div class="bannerWithText">
+          <div class="banner">
+            <img src="/Assets/imgs/sleep.jpg" alt="" style="height: 70vh" />
+          </div>
+          <div class="textOnBanner">
+            <div style="
+            font-size: 2rem;
+            text-align: center;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            ">
+              <p> Relax in our cozy, inviting atmosphere - your perfect coffee escape.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <h3 style="text-align: center;">Our best seller</h3>
+        <div style="display: flex; justify-content: center;">
+          <div class="card">
+            <img src="/Assets/imgs/Espresso.jpg" alt="" style="width:100%">
+            <div class="container">
+              <h4><b> Espresso</b></h4>
+              <p>Euro - 1.5 </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Assets/imgs/Caffè_Marocchino.jpg" alt="" style="width:100%">
+            <div class="container">
+              <h4><b>Caffè Marocchino</b></h4>
+              <p>Euro - 3 </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Assets/imgs/cappuccino.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Cappuccino</b></h4>
+              <p>Euro - 2 </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/Assets/imgs/Affogato.jpg" alt="" style="width:100%">
+            <div class="container">
+              <h4><b>Affogato </b></h4>
+              <p>Euro - 3.25 </p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-content">
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Latto Café. All rights reserved.</p>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+      function myfunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          document.getElementById("logo").style.display = "none";
+        } else {
+          x.className = "topnav";
+          document.getElementById("logo").style.display = "block";
+        }
+      }
+    </script>
+  </header>
+
+</body>
+
+</html>
