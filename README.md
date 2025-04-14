@@ -56,6 +56,15 @@ To get this project running locally on your machine, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/latto-cafe.git
+2. **Navigate to the project folder:**
+ 
+   ```bash
+   cd latto-cafe
+3. **Open the index.html file:**
+
+      You can open the project in any browser by opening the index.html file directly, or you can use an IDE like VSCode to preview the website locally.
+
+   
 Usage
 Once you have the website open in your browser, you can:
 
@@ -66,3 +75,29 @@ Interact with the Perfect Pairings section and discover the best coffee pairings
 Learn about Latto Café’s history, values, and location.
 
 Use the Contact Form to reach out to the café for inquiries.
+
+Contributing
+Contributions are always welcome! If you'd like to contribute to the Latto Café website, feel free to fork the repository and submit a pull request.
+
+Steps to Contribute:
+Fork the repository.
+
+Create a new branch (git checkout -b feature-branch).
+
+Make your changes and commit them (git commit -m 'Add feature').
+
+Push to your branch (git push origin feature-branch).
+
+Open a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+Font Awesome: For providing the icons used throughout the website.
+
+Google Fonts: For providing the elegant fonts used in the design.
+
+OpenStreetMap: For the map on the Contact Page.
+
+
