@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/demo.css">
+  <link rel="shortcut icon" href="/Assets/imgs/Big_favicon.png" type="image/x-icon">
+  <title>Latto Café Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="background-color: #fffaf4;">
+  <header>
+    <div class="topnav" id="myTopnav">
+      <a id="logo" href="menu.html">
+        <img id="imglogo" src="/Assets/imgs/Logo.png" alt="">
+      </a>
+      <a href="demo.html" class="navItem ">Home</a>
+      <a href="menu.html" class="navItem active">Menu</a>
+      <a href="contact.html" class="navItem">Contact</a>
+      <a href="about.html" class="navItem">About</a>
+      <a href="javascript:void(0);" class="navItem iconBar" onclick="myfunction()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <h1 id="hmenu"> Indulge Your Senses For The Ultimate Collection of Coffees & Desserts! </h1>
+  <main class="menu-container">
+    <!-- Sign In Form -->
+    <div class="signin-container" id="signinForm">
+      <h2 style="color:  #6f4e37;">Sign In to Order</h2>
+      <form class="signin-form" onsubmit="return handleSignIn(event)">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+    <hr>
+    <h1 style="color: #7a7753;" class="menu-heading">Our Delicious Menu</h1>
+    <section class="menu-grid" id="menuSection" style="display: none;">
+      <div class="menu-item">
+        <img src="/Assets/imgs/Ristretto.jpg " alt="">
+        <div class="overlay">
+          <h2>Ristretto</h2>
+          <p>€1.15</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Espresso.jpg" alt="">
+        <div class="overlay">
+          <h2>Espresso</h2>
+          <p>€1.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Americano.jpg" alt="">
+        <div class="overlay">
+          <h2>Espresso Americano</h2>
+          <p>€1.80</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Macchiato.jpg" alt="">
+        <div class="overlay">
+          <h2>Macchiato</h2>
+          <p>€2.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Cortado.jpg " alt="">
+        <div class="overlay">
+          <h2>Cortado</h2>
+          <p>€2.20</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/cappuccino.jpg" alt="">
+        <div class="overlay">
+          <h2>Cappuccino</h2>
+          <p>€2.35</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Cafe Au Lait.jpg " alt="">
+        <div class="overlay">
+          <h2>Café au Lait</h2>
+          <p>€2.70</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Caffè_Marocchino.jpg " alt="">
+        <div class="overlay">
+          <h2>Caffè Marocchino</h2>
+          <p>€3.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/mocha.jpg" alt="">
+        <div class="overlay">
+          <h2>Mocha al cioccolato bianco </h2>
+          <p>€3.20</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Affogato.jpg " alt="">
+        <div class="overlay">
+          <h2>Affogato</h2>
+          <p>€3.25</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Assets/imgs/Shakerato.jpg" alt="">
+        <div class="overlay">
+          <h2>Caffè Shakerato</h2>
+          <p>€3.90</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Assets/imgs/CaramelMacchiato.jpg" alt="">
+        <div class="overlay">
+          <h2>Caramello Macchiato</h2>
+          <p>€4.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="/Assets/imgs/Iced_Latte.jpg" alt="">
+        <div class="overlay">
+          <h2>Latte Freddo</h2>
+          <p>€2.30</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Leccese.jpg" alt="">
+        <div class="overlay">
+          <h2>Caffè Leccese</h2>
+          <p>€3.20</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Ghiaccio.jpg" alt="">
+        <div class="overlay">
+          <h2>Caffè in Ghiaccio</h2>
+          <p>€4.65</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Granita.jpg" alt="">
+        <div class="overlay">
+          <h2>Granita di Caffè</h2>
+          <p>€5</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Croissant.jpg" alt="">
+        <div class="overlay">
+          <h2>Croissant</h2>
+          <p>€1.30</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/CON MARMELLATA.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche con Marmellata</h2>
+          <p>€1.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/conuvetta.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche con Uvetta</h2>
+          <p>€1.70</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/auchocolat.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche con chocolat</h2>
+          <p>€1.85</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Danesi cocrema.jpg" alt="">
+        <div class="overlay">
+          <h2>Danesi con crema</h2>
+          <p>€2.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Bomboloni.jpg" alt="">
+        <div class="overlay">
+          <h2>Bomboloni</h2>
+          <p>€2.10</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/tupposiciliana.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche col Tuppo</h2>
+          <p>€2.25</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Veneziana.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche Veneziana</h2>
+          <p>€2.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Conpistacchio.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche con Crema di Pistacchio</h2>
+          <p>€2.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/ConFragole.jpg" alt="">
+        <div class="overlay">
+          <h2>Brioche con Crema di Fragola</h2>
+          <p>€3.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Bignè.jpg" alt="">
+        <div class="overlay">
+          <h2>Bignè con crema</h2>
+          <p>€3.30</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="/Assets/imgs/Cannoli.jpg" alt="">
+        <div class="overlay">
+          <h2>Cannoli</h2>
+          <p>€4.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+
+
+    </section>
+  </main>
+
+
+  <script>
+  
+
+    // Function to show the menu section when the user signs in
+    function handleSignIn(event) {
+      event.preventDefault();
+      // For now, just simulate successful sign-in
+      document.getElementById("signinForm").style.display = "none";  // Hide the sign-in form
+      const menuSection = document.getElementById("menuSection");
+
+      // First, ensure the section is shown and it's ready for grid layout
+      menuSection.style.display = "grid";  // Show it with grid display
+
+      // Force a reflow by changing a property, then force layout update
+      menuSection.offsetHeight;  // This will force a reflow
+
+      // After reflow, you can apply any additional animations or styles if needed
+    }
+
+
+  </script>
+
+</body>
+
+</html>
