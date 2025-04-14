@@ -64,7 +64,7 @@ To get this project running locally on your machine, follow these steps:
       You can open the project in any browser by opening the index.html file directly, or you can use an IDE like VSCode to preview the website locally.
 
    
-Usage
+## Usage
 Once you have the website open in your browser, you can:
 
 Navigate through the Home, Menu, About, and Contact pages.
@@ -75,7 +75,7 @@ Learn about Latto Café’s history, values, and location.
 
 Use the Contact Form to reach out to the café for inquiries.
 
-Contributing
+## Contributing
 Contributions are always welcome! If you'd like to contribute to the Latto Café website, feel free to fork the repository and submit a pull request.
 
 Steps to Contribute:
@@ -89,10 +89,10 @@ Push to your branch (git push origin feature-branch).
 
 Open a pull request.
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgements
+## Acknowledgements
 Font Awesome: For providing the icons used throughout the website.
 
 Google Fonts: For providing the elegant fonts used in the design.
