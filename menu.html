@@ -277,11 +277,14 @@
 
 
     </section>
+
+
+
   </main>
 
 
   <script>
-  
+
 
     // Function to show the menu section when the user signs in
     function handleSignIn(event) {
@@ -299,8 +302,53 @@
       // After reflow, you can apply any additional animations or styles if needed
     }
 
+    const cart = [];
+
+  // Hook all add-to-cart buttons
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.menu-item');
+      const name = item.querySelector('h2').innerText;
+      const price = item.querySelector('p').innerText;
+
+      cart.push({ name, price });
+      updateCart();
+      openCart();
+    });
+  });
+
+  function openCart() {
+    document.getElementById('cartModal').style.display = 'flex';
+  }
+
+  function closeCart() {
+    document.getElementById('cartModal').style.display = 'none';
+  }
+
+  function updateCart() {
+    const cartList = document.getElementById('cartItems');
+    cartList.innerHTML = '';
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.name} - ${item.price}`;
+      cartList.appendChild(li);
+    });
+  }
+
 
   </script>
+
+
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <span class="close-btn" onclick="closeCart()">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+
 
 </body>
 
