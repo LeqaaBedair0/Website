@@ -181,7 +181,7 @@ h2 {
 }
 
 .parallax {
-  background-image: url(/Assets/imgs/Coffee_sack.jpg);
+  background-image: url(../Assets/imgs/Coffee_sack.jpg);
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -465,6 +465,7 @@ h2 {
 .add-to-cart:hover {
   background-color: #6a6948;
 }
+
 
 .cart-modal {
   display: none;
